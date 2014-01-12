@@ -15,4 +15,11 @@
 		<nature>org.radrails.rails.core.railsnature</nature>
 		<nature>com.aptana.ruby.core.rubynature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>script</name>
+			<type>2</type>
+			<locationURI>PROJECT_LOC/bin</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
