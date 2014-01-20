@@ -5,10 +5,10 @@
 			<nav>
 				<ul class="nav pull-right">
 					<li>
-						<%= link_to "Home",    root_path %>
+						<%= link_to "Home", root_path %>
 					</li>
 					<li>
-						<%= link_to "Help",    help_path %>
+						<%= link_to "Help", help_path %>
 					</li>
 					<% if signed_in? %>
 					<li>
@@ -21,7 +21,7 @@
 								<%= link_to "Profile", current_user %>
 							</li>
 							<li>
-								<%= link_to "Settings", '#' %>
+								<%= link_to "Settings", edit_user_path(current_user) %>
 							</li>
 							<li class="divider"></li>
 							<li>
