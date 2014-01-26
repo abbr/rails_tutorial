@@ -4,7 +4,7 @@ describe Micropost do
 
   let(:user) { FactoryGirl.create(:user) }
   before do
-    # This code is not idiomatically correct.
+  # This code is not idiomatically correct.
     @micropost = Micropost.new(content: "Lorem ipsum", user_id: user.id)
   end
 
@@ -12,4 +12,10 @@ describe Micropost do
 
   it { should respond_to(:content) }
   it { should respond_to(:user_id) }
+  it { should be_valid }
+
+  describe "when user_id is not present" do
+    before { @micropost.user_id = nil }
+    it { should_not be_valid }
+  end
 end
